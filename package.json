@@ -1,0 +1,22 @@
+{
+  "name": "gitnode",
+  "version": "1.0.0",
+  "description": "webapp for localgit",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yvescavalcanti/gitnode.git"
+  },
+  "author": "Yves Cavalcanti",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yvescavalcanti/gitnode/issues"
+  },
+  "homepage": "https://github.com/yvescavalcanti/gitnode#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

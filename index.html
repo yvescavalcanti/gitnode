@@ -1,0 +1,20 @@
+<html>
+	<body>
+		<ol id="branches"></ol>
+	</body>
+	<script>
+		var branches = document.querySelector('#branches');
+
+		async function getBranches(){
+			try{
+				let response = await fetch('/branches');
+				console.log(response);
+				let json = await response.json();
+				console.log(json);
+				branches.innerHTML = json.branches.map(el => `<li>${el}</li>`).join('');
+			}catch(err){}
+		}
+
+		getBranches();
+		</script>
+</html>
